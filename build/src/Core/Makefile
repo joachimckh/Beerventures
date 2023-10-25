@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles /Users/emilgormnielsen/CodingProjects/Beerventures/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles /Users/emilgormnielsen/CodingProjects/Beerventures/build/src/Core//CMakeFiles/progress.marks
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,44 +103,80 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Beerventures
+# Convenience name for target.
+src/Core/CMakeFiles/Core.dir/rule:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Core/CMakeFiles/Core.dir/rule
+.PHONY : src/Core/CMakeFiles/Core.dir/rule
 
-# Build rule for target.
-Beerventures: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Beerventures
-.PHONY : Beerventures
-
-# fast build rule for target.
-Beerventures/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Beerventures.dir/build.make src/CMakeFiles/Beerventures.dir/build
-.PHONY : Beerventures/fast
-
-#=============================================================================
-# Target rules for targets named Core
-
-# Build rule for target.
-Core: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Core
+# Convenience name for target.
+Core: src/Core/CMakeFiles/Core.dir/rule
 .PHONY : Core
 
 # fast build rule for target.
 Core/fast:
-	$(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/build
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/build
 .PHONY : Core/fast
+
+Inventory.o: Inventory.cxx.o
+.PHONY : Inventory.o
+
+# target to build an object file
+Inventory.cxx.o:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Inventory.cxx.o
+.PHONY : Inventory.cxx.o
+
+Inventory.i: Inventory.cxx.i
+.PHONY : Inventory.i
+
+# target to preprocess a source file
+Inventory.cxx.i:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Inventory.cxx.i
+.PHONY : Inventory.cxx.i
+
+Inventory.s: Inventory.cxx.s
+.PHONY : Inventory.s
+
+# target to generate assembly for a file
+Inventory.cxx.s:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Inventory.cxx.s
+.PHONY : Inventory.cxx.s
+
+Unit.o: Unit.cxx.o
+.PHONY : Unit.o
+
+# target to build an object file
+Unit.cxx.o:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Unit.cxx.o
+.PHONY : Unit.cxx.o
+
+Unit.i: Unit.cxx.i
+.PHONY : Unit.i
+
+# target to preprocess a source file
+Unit.cxx.i:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Unit.cxx.i
+.PHONY : Unit.cxx.i
+
+Unit.s: Unit.cxx.s
+.PHONY : Unit.s
+
+# target to generate assembly for a file
+Unit.cxx.s:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Unit.cxx.s
+.PHONY : Unit.cxx.s
 
 # Help Target
 help:
@@ -150,8 +186,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Beerventures"
 	@echo "... Core"
+	@echo "... Inventory.o"
+	@echo "... Inventory.i"
+	@echo "... Inventory.s"
+	@echo "... Unit.o"
+	@echo "... Unit.i"
+	@echo "... Unit.s"
 .PHONY : help
 
 
@@ -163,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -5,5 +5,4 @@ project(Beerventures)
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 
-add_executable(Beerventures main.cxx)
-target_link_libraries(Beerventures ${SDL2_LIBRARIES})
+add_subdirectory(src)   
