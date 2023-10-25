@@ -22,7 +22,8 @@
 					"build" : "src",
 					"childIndexes" : 
 					[
-						2
+						2,
+						3
 					],
 					"jsonFile" : "directory-src-b6cf2213fc5053b67c22.json",
 					"minimumCMakeVersion" : 
@@ -49,6 +50,21 @@
 					"source" : "src/Game",
 					"targetIndexes" : 
 					[
+						2
+					]
+				},
+				{
+					"build" : "src/Core",
+					"jsonFile" : "directory-src.Core-d4c1453289db9b95fd89.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/Core",
+					"targetIndexes" : 
+					[
 						1
 					]
 				}
@@ -61,13 +77,15 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					],
 					"name" : "Beerventures",
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -76,8 +94,15 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "Beerventures::@145eef247bfb46b6828c",
-					"jsonFile" : "target-Beerventures-53e45be862eff547a5cf.json",
+					"jsonFile" : "target-Beerventures-1bd98fc448678d7daa0b.json",
 					"name" : "Beerventures",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Core::@2b0c95fd366a9f5c3552",
+					"jsonFile" : "target-Core-9fbab545c408ae3ea246.json",
+					"name" : "Core",
 					"projectIndex" : 0
 				},
 				{

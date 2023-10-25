@@ -177,6 +177,9 @@
 		},
 		{
 			"path" : "src/Game/CMakeLists.txt"
+		},
+		{
+			"path" : "src/Core/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

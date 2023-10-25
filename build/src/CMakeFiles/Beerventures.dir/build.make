@@ -96,6 +96,7 @@ Beerventures: /usr/local/lib/libSDL2.dylib
 Beerventures: /usr/local/lib/libSDL2main.a
 Beerventures: /usr/local/lib/libSDL2_image.dylib
 Beerventures: src/Game/libGame.a
+Beerventures: src/Core/libCore.a
 Beerventures: src/CMakeFiles/Beerventures.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../Beerventures"
 	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Beerventures.dir/link.txt --verbose=$(VERBOSE)

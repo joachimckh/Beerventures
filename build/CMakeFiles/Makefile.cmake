@@ -14,6 +14,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/emilgormnielsen/CodingProjects/Beerventures/cmake/FindSDL2.cmake"
   "/Users/emilgormnielsen/CodingProjects/Beerventures/cmake/FindSDL2_image.cmake"
   "/Users/emilgormnielsen/CodingProjects/Beerventures/src/CMakeLists.txt"
+  "/Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/CMakeLists.txt"
   "/Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.27.3/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.27.3/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -51,10 +52,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/Game/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/Core/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/Beerventures.dir/DependInfo.cmake"
   "src/Game/CMakeFiles/Game.dir/DependInfo.cmake"
+  "src/Core/CMakeFiles/Core.dir/DependInfo.cmake"
   )
