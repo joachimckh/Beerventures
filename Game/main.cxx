@@ -12,7 +12,7 @@ int main(){
 
   game = new BGame();
 
-  game->Init("JinxEngine",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED, 800, 600, false);
+  game->Init("JinxEngine",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED, 800, 640, false);
 
   while (game->Running()){
 

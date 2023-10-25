@@ -1,5 +1,5 @@
-#ifndef __BGAME_CXX__
-#define __BGAME_CXX__
+#ifndef __BGAME_H__
+#define __BGAME_H__
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
@@ -21,14 +21,17 @@ class BGame{
 
     bool Running();
 
+
+    static SDL_Renderer *Renderer;
+
   private:
     int           cnt;
     bool          isRunning;
     SDL_Window    *Window;
-    SDL_Renderer  *Renderer;
+    
 
 
 };
 
 
-#endif /* __BGAME_CXX__ */
+#endif /* __BGAME_H__ */

@@ -1,9 +1,8 @@
 #include "BGameObject.h"
 #include "BTextureManager.h"
 
-BGameObject::BGameObject(const char* textureSheet, SDL_Renderer *ren, int x, int y) :
-objTexture{BTextureManager::LoadTexture(textureSheet, ren)},
-Renderer{ren},
+BGameObject::BGameObject(const char* textureSheet, int x, int y) :
+objTexture{BTextureManager::LoadTexture(textureSheet)},
 xPos{x},
 yPos{y}
 {}
@@ -27,5 +26,5 @@ void BGameObject::Update(){
 
 }
 void BGameObject::Render(){
-  SDL_RenderCopy(Renderer,objTexture, &srcRect, &destRect);
+  SDL_RenderCopy(BGame::Renderer,objTexture, &srcRect, &destRect);
 }

@@ -1,3 +1,3 @@
-/Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles/Beerventures.dir
-/Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles/edit_cache.dir
-/Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles/rebuild_cache.dir
+/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/build/CMakeFiles/Beerventures.dir
+/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/build/CMakeFiles/edit_cache.dir
+/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/build/CMakeFiles/rebuild_cache.dir

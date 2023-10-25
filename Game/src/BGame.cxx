@@ -1,9 +1,13 @@
 #include "BGame.h"
 #include "BTextureManager.h"
 #include "BGameObject.h"
+#include "BMap.h"
 
 BGameObject *player;
 BGameObject *enemy;
+BMap *map;
+
+SDL_Renderer* BGame::Renderer = nullptr;
 
 BGame::BGame() :
 cnt{0}
@@ -34,9 +38,9 @@ void BGame::Init(const char* title, int xPos, int yPos, int width, int height, b
     isRunning = false;
   }
 
-  player = new BGameObject("../Assets/rogue_32.png",Renderer,0,0);
-
-  enemy = new BGameObject("../Assets/rogue_32.png",Renderer,50,50);
+  player = new BGameObject("../Assets/rogue_32.png",0,0);
+  enemy = new BGameObject("../Assets/rogue_32.png",50,50);
+  map = new BMap();
 
   
 
@@ -62,6 +66,7 @@ void BGame::Update(){
 void BGame::Render(){
   SDL_RenderClear(Renderer);
   // add stuff to render here
+  map->DrawMap();
   player->Render();
   enemy->Render();
   SDL_RenderPresent(Renderer);

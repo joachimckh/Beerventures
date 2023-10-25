@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/build",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/sdl2/2.28.4/include -isystem /opt/homebrew/Cellar/sdl2/2.28.4/include/SDL2 -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/Beerventures.dir/main.cxx.o -c /Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/main.cxx",
+  "file": "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/main.cxx"
+}
+]
