@@ -69,44 +69,44 @@ include src/Core/CMakeFiles/Core.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/Core/CMakeFiles/Core.dir/flags.make
 
-src/Core/CMakeFiles/Core.dir/Inventory.cxx.o: src/Core/CMakeFiles/Core.dir/flags.make
-src/Core/CMakeFiles/Core.dir/Inventory.cxx.o: /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/Inventory.cxx
-src/Core/CMakeFiles/Core.dir/Inventory.cxx.o: src/Core/CMakeFiles/Core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/Core/CMakeFiles/Core.dir/Inventory.cxx.o"
-	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build/src/Core && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/Core/CMakeFiles/Core.dir/Inventory.cxx.o -MF CMakeFiles/Core.dir/Inventory.cxx.o.d -o CMakeFiles/Core.dir/Inventory.cxx.o -c /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/Inventory.cxx
+src/Core/CMakeFiles/Core.dir/BInventory.cxx.o: src/Core/CMakeFiles/Core.dir/flags.make
+src/Core/CMakeFiles/Core.dir/BInventory.cxx.o: /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BInventory.cxx
+src/Core/CMakeFiles/Core.dir/BInventory.cxx.o: src/Core/CMakeFiles/Core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/Core/CMakeFiles/Core.dir/BInventory.cxx.o"
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build/src/Core && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/Core/CMakeFiles/Core.dir/BInventory.cxx.o -MF CMakeFiles/Core.dir/BInventory.cxx.o.d -o CMakeFiles/Core.dir/BInventory.cxx.o -c /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BInventory.cxx
 
-src/Core/CMakeFiles/Core.dir/Inventory.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Core.dir/Inventory.cxx.i"
-	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build/src/Core && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/Inventory.cxx > CMakeFiles/Core.dir/Inventory.cxx.i
+src/Core/CMakeFiles/Core.dir/BInventory.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Core.dir/BInventory.cxx.i"
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build/src/Core && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BInventory.cxx > CMakeFiles/Core.dir/BInventory.cxx.i
 
-src/Core/CMakeFiles/Core.dir/Inventory.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Core.dir/Inventory.cxx.s"
-	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build/src/Core && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/Inventory.cxx -o CMakeFiles/Core.dir/Inventory.cxx.s
+src/Core/CMakeFiles/Core.dir/BInventory.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Core.dir/BInventory.cxx.s"
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build/src/Core && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BInventory.cxx -o CMakeFiles/Core.dir/BInventory.cxx.s
 
-src/Core/CMakeFiles/Core.dir/Unit.cxx.o: src/Core/CMakeFiles/Core.dir/flags.make
-src/Core/CMakeFiles/Core.dir/Unit.cxx.o: /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/Unit.cxx
-src/Core/CMakeFiles/Core.dir/Unit.cxx.o: src/Core/CMakeFiles/Core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/Core/CMakeFiles/Core.dir/Unit.cxx.o"
-	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build/src/Core && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/Core/CMakeFiles/Core.dir/Unit.cxx.o -MF CMakeFiles/Core.dir/Unit.cxx.o.d -o CMakeFiles/Core.dir/Unit.cxx.o -c /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/Unit.cxx
+src/Core/CMakeFiles/Core.dir/BUnit.cxx.o: src/Core/CMakeFiles/Core.dir/flags.make
+src/Core/CMakeFiles/Core.dir/BUnit.cxx.o: /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BUnit.cxx
+src/Core/CMakeFiles/Core.dir/BUnit.cxx.o: src/Core/CMakeFiles/Core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/Core/CMakeFiles/Core.dir/BUnit.cxx.o"
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build/src/Core && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/Core/CMakeFiles/Core.dir/BUnit.cxx.o -MF CMakeFiles/Core.dir/BUnit.cxx.o.d -o CMakeFiles/Core.dir/BUnit.cxx.o -c /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BUnit.cxx
 
-src/Core/CMakeFiles/Core.dir/Unit.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Core.dir/Unit.cxx.i"
-	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build/src/Core && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/Unit.cxx > CMakeFiles/Core.dir/Unit.cxx.i
+src/Core/CMakeFiles/Core.dir/BUnit.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Core.dir/BUnit.cxx.i"
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build/src/Core && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BUnit.cxx > CMakeFiles/Core.dir/BUnit.cxx.i
 
-src/Core/CMakeFiles/Core.dir/Unit.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Core.dir/Unit.cxx.s"
-	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build/src/Core && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/Unit.cxx -o CMakeFiles/Core.dir/Unit.cxx.s
+src/Core/CMakeFiles/Core.dir/BUnit.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Core.dir/BUnit.cxx.s"
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build/src/Core && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BUnit.cxx -o CMakeFiles/Core.dir/BUnit.cxx.s
 
 # Object files for target Core
 Core_OBJECTS = \
-"CMakeFiles/Core.dir/Inventory.cxx.o" \
-"CMakeFiles/Core.dir/Unit.cxx.o"
+"CMakeFiles/Core.dir/BInventory.cxx.o" \
+"CMakeFiles/Core.dir/BUnit.cxx.o"
 
 # External object files for target Core
 Core_EXTERNAL_OBJECTS =
 
-src/Core/libCore.a: src/Core/CMakeFiles/Core.dir/Inventory.cxx.o
-src/Core/libCore.a: src/Core/CMakeFiles/Core.dir/Unit.cxx.o
+src/Core/libCore.a: src/Core/CMakeFiles/Core.dir/BInventory.cxx.o
+src/Core/libCore.a: src/Core/CMakeFiles/Core.dir/BUnit.cxx.o
 src/Core/libCore.a: src/Core/CMakeFiles/Core.dir/build.make
 src/Core/libCore.a: src/Core/CMakeFiles/Core.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libCore.a"

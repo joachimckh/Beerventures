@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Core.dir/Inventory.cxx.o"
-  "CMakeFiles/Core.dir/Inventory.cxx.o.d"
-  "CMakeFiles/Core.dir/Unit.cxx.o"
-  "CMakeFiles/Core.dir/Unit.cxx.o.d"
+  "CMakeFiles/Core.dir/BInventory.cxx.o"
+  "CMakeFiles/Core.dir/BInventory.cxx.o.d"
+  "CMakeFiles/Core.dir/BUnit.cxx.o"
+  "CMakeFiles/Core.dir/BUnit.cxx.o.d"
   "libCore.a"
   "libCore.pdb"
 )

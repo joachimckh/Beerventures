@@ -1,10 +1,10 @@
-#ifndef OBJECT__H
-#define OBJECT__H
+#ifndef BOBJECT__H
+#define BOBJECT__H
 
-class Object {
+class BObject {
     public:
-        Object();
-        ~Object();
+        BObject();
+        ~BObject();
         int GetID() { return id; }
 
     private:

@@ -130,53 +130,53 @@ Core/fast:
 	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/build
 .PHONY : Core/fast
 
-Inventory.o: Inventory.cxx.o
-.PHONY : Inventory.o
+BInventory.o: BInventory.cxx.o
+.PHONY : BInventory.o
 
 # target to build an object file
-Inventory.cxx.o:
-	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Inventory.cxx.o
-.PHONY : Inventory.cxx.o
+BInventory.cxx.o:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BInventory.cxx.o
+.PHONY : BInventory.cxx.o
 
-Inventory.i: Inventory.cxx.i
-.PHONY : Inventory.i
+BInventory.i: BInventory.cxx.i
+.PHONY : BInventory.i
 
 # target to preprocess a source file
-Inventory.cxx.i:
-	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Inventory.cxx.i
-.PHONY : Inventory.cxx.i
+BInventory.cxx.i:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BInventory.cxx.i
+.PHONY : BInventory.cxx.i
 
-Inventory.s: Inventory.cxx.s
-.PHONY : Inventory.s
+BInventory.s: BInventory.cxx.s
+.PHONY : BInventory.s
 
 # target to generate assembly for a file
-Inventory.cxx.s:
-	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Inventory.cxx.s
-.PHONY : Inventory.cxx.s
+BInventory.cxx.s:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BInventory.cxx.s
+.PHONY : BInventory.cxx.s
 
-Unit.o: Unit.cxx.o
-.PHONY : Unit.o
+BUnit.o: BUnit.cxx.o
+.PHONY : BUnit.o
 
 # target to build an object file
-Unit.cxx.o:
-	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Unit.cxx.o
-.PHONY : Unit.cxx.o
+BUnit.cxx.o:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BUnit.cxx.o
+.PHONY : BUnit.cxx.o
 
-Unit.i: Unit.cxx.i
-.PHONY : Unit.i
+BUnit.i: BUnit.cxx.i
+.PHONY : BUnit.i
 
 # target to preprocess a source file
-Unit.cxx.i:
-	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Unit.cxx.i
-.PHONY : Unit.cxx.i
+BUnit.cxx.i:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BUnit.cxx.i
+.PHONY : BUnit.cxx.i
 
-Unit.s: Unit.cxx.s
-.PHONY : Unit.s
+BUnit.s: BUnit.cxx.s
+.PHONY : BUnit.s
 
 # target to generate assembly for a file
-Unit.cxx.s:
-	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/Unit.cxx.s
-.PHONY : Unit.cxx.s
+BUnit.cxx.s:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BUnit.cxx.s
+.PHONY : BUnit.cxx.s
 
 # Help Target
 help:
@@ -187,12 +187,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Core"
-	@echo "... Inventory.o"
-	@echo "... Inventory.i"
-	@echo "... Inventory.s"
-	@echo "... Unit.o"
-	@echo "... Unit.i"
-	@echo "... Unit.s"
+	@echo "... BInventory.o"
+	@echo "... BInventory.i"
+	@echo "... BInventory.s"
+	@echo "... BUnit.o"
+	@echo "... BUnit.i"
+	@echo "... BUnit.s"
 .PHONY : help
 
 

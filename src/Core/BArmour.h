@@ -1,10 +1,10 @@
-#ifndef ARMOUR__H
-#define ARMOUR__H
+#ifndef BARMOUR__H
+#define BARMOUR__H
 
-class Armour : Object {
+class BArmour : Object {
     public:
-        Armour();
-        ~Armour();
+        BArmour();
+        ~BArmour();
         
         void SetHead(Object obj) { head = obj; }
         void SetShoulder(Object obj) { shoulder = obj; }
@@ -15,13 +15,13 @@ class Armour : Object {
         void SetFeet(Object obj) { feet = obj; }
         
     private:
-        Object head;
-        Object shoulder;
-        Object torso;
-        Object legs;
-        Object arms;
-        Object hands;
-        Object feet;
+        BObject head;
+        BObject shoulder;
+        BObject torso;
+        BObject legs;
+        BObject arms;
+        BObject hands;
+        BObject feet;
 
 };
 
