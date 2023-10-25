@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles /Users/emilgormnielsen/CodingProjects/Beerventures/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles /Users/emilgormnielsen/CodingProjects/Beerventures/build/src//CMakeFiles/progress.marks
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,44 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Beerventures
+# Convenience name for target.
+src/CMakeFiles/Beerventures.dir/rule:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Beerventures.dir/rule
+.PHONY : src/CMakeFiles/Beerventures.dir/rule
 
-# Build rule for target.
-Beerventures: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Beerventures
+# Convenience name for target.
+Beerventures: src/CMakeFiles/Beerventures.dir/rule
 .PHONY : Beerventures
 
 # fast build rule for target.
 Beerventures/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Beerventures.dir/build.make src/CMakeFiles/Beerventures.dir/build
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Beerventures.dir/build.make src/CMakeFiles/Beerventures.dir/build
 .PHONY : Beerventures/fast
 
-#=============================================================================
-# Target rules for targets named Game
+main.o: main.cxx.o
+.PHONY : main.o
 
-# Build rule for target.
-Game: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Game
-.PHONY : Game
+# target to build an object file
+main.cxx.o:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Beerventures.dir/build.make src/CMakeFiles/Beerventures.dir/main.cxx.o
+.PHONY : main.cxx.o
 
-# fast build rule for target.
-Game/fast:
-	$(MAKE) $(MAKESILENT) -f src/Game/CMakeFiles/Game.dir/build.make src/Game/CMakeFiles/Game.dir/build
-.PHONY : Game/fast
+main.i: main.cxx.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cxx.i:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Beerventures.dir/build.make src/CMakeFiles/Beerventures.dir/main.cxx.i
+.PHONY : main.cxx.i
+
+main.s: main.cxx.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cxx.s:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Beerventures.dir/build.make src/CMakeFiles/Beerventures.dir/main.cxx.s
+.PHONY : main.cxx.s
 
 # Help Target
 help:
@@ -151,7 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Beerventures"
-	@echo "... Game"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -163,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
