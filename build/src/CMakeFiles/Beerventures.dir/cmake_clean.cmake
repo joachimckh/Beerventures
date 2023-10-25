@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "Beerventures"
-  "Beerventures.pdb"
+  "../Beerventures"
+  "../Beerventures.pdb"
   "CMakeFiles/Beerventures.dir/main.cxx.o"
   "CMakeFiles/Beerventures.dir/main.cxx.o.d"
 )
