@@ -27,13 +27,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 7,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 7,
+				"line" : 8,
 				"parent" : 0
 			},
 			{
@@ -53,22 +53,26 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk"
+					"fragment" : " -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 4,
-					"path" : "/usr/local/include/SDL2"
+					"path" : "/opt/homebrew/include/SDL2"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/emilgormnielsen/CodingProjects/Beerventures/src/Game"
+					"path" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/src/Game"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/emilgormnielsen/CodingProjects/Beerventures/src/Core"
+					"path" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/src/Core"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/src/Game/BECS"
 				}
 			],
 			"language" : "CXX",
@@ -86,6 +90,10 @@
 		},
 		{
 			"backtrace" : 2,
+			"id" : "BECS::@a2936abe97553a59d357"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "Core::@2b0c95fd366a9f5c3552"
 		}
 	],
@@ -100,7 +108,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libSDL2.dylib",
+				"fragment" : "/opt/homebrew/lib/libSDL2.dylib",
 				"role" : "libraries"
 			},
 			{
@@ -110,12 +118,12 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libSDL2main.a",
+				"fragment" : "/opt/homebrew/lib/libSDL2main.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libSDL2_image.dylib",
+				"fragment" : "/opt/homebrew/lib/libSDL2_image.dylib",
 				"role" : "libraries"
 			},
 			{
@@ -126,6 +134,11 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "Core/libCore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "Game/BECS/libBECS.a",
 				"role" : "libraries"
 			}
 		],
@@ -157,7 +170,13 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
 			]
 		}
 	],
@@ -191,6 +210,11 @@
 		},
 		{
 			"backtrace" : 2,
+			"path" : "src/Game/BVector2D.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
 			"path" : "src/Core/BInventory.h",
 			"sourceGroupIndex" : 1
 		},
@@ -202,6 +226,31 @@
 		{
 			"backtrace" : 2,
 			"path" : "src/Core/BObject.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Game/BECS/BComponents.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Game/BECS/BECS.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Game/BECS/BTransformComponent.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Game/BECS/BSpriteComponent.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Game/BECS/BKeyBoardController.h",
 			"sourceGroupIndex" : 1
 		}
 	],

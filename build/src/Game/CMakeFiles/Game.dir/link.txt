@@ -1,2 +1,2 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libGame.a CMakeFiles/Game.dir/BGame.cxx.o CMakeFiles/Game.dir/BGameObject.cxx.o CMakeFiles/Game.dir/BTextureManager.cxx.o CMakeFiles/Game.dir/BMap.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libGame.a
+/Library/Developer/CommandLineTools/usr/bin/ar qc libGame.a CMakeFiles/Game.dir/BGame.cxx.o CMakeFiles/Game.dir/BGameObject.cxx.o CMakeFiles/Game.dir/BTextureManager.cxx.o CMakeFiles/Game.dir/BMap.cxx.o CMakeFiles/Game.dir/BVector2D.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libGame.a

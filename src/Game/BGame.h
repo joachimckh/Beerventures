@@ -24,8 +24,11 @@ class BGame{
 
     static SDL_Renderer *Renderer;
 
+    static const int gResolution;
+    static SDL_Event event;
+    
+
   private:
-    int           cnt;
     bool          isRunning;
     SDL_Window    *Window;
     

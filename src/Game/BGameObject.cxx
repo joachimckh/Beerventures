@@ -2,9 +2,9 @@
 #include "BTextureManager.h"
 
 BGameObject::BGameObject(const char* textureSheet, int x, int y) :
-objTexture(BTextureManager::LoadTexture(textureSheet)),
-xPos(x),
-yPos(y)
+objTexture{BTextureManager::LoadTexture(textureSheet)},
+xPos{x},
+yPos{y}
 {}
 BGameObject::~BGameObject()
 {}
@@ -13,8 +13,8 @@ void BGameObject::Update(){
   xPos++;
   yPos++;
 
-  srcRect.h = 32;
-  srcRect.w = 32;
+  srcRect.h = BGame::gResolution;
+  srcRect.w = BGame::gResolution;
   srcRect.x = 0;
   srcRect.y = 0;
 

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Game.dir/BMap.cxx.o.d"
   "CMakeFiles/Game.dir/BTextureManager.cxx.o"
   "CMakeFiles/Game.dir/BTextureManager.cxx.o.d"
+  "CMakeFiles/Game.dir/BVector2D.cxx.o"
+  "CMakeFiles/Game.dir/BVector2D.cxx.o.d"
   "libGame.a"
   "libGame.pdb"
 )

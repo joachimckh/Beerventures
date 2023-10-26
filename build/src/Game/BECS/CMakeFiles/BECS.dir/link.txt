@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libBECS.a CMakeFiles/BECS.dir/BComponents.cxx.o CMakeFiles/BECS.dir/BECS.cxx.o CMakeFiles/BECS.dir/BTransformComponent.cxx.o CMakeFiles/BECS.dir/BSpriteComponent.cxx.o CMakeFiles/BECS.dir/BKeyBoardController.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libBECS.a

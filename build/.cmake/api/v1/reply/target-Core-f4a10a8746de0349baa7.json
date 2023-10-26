@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "src/Game/libGame.a"
+			"path" : "src/Core/libCore.a"
 		}
 	],
 	"backtrace" : 1,
@@ -18,7 +18,7 @@
 		],
 		"files" : 
 		[
-			"src/Game/CMakeLists.txt",
+			"src/Core/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -44,7 +44,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 15,
+				"line" : 12,
 				"parent" : 0
 			},
 			{
@@ -61,37 +61,35 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk"
+					"fragment" : " -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/usr/local/include/SDL2"
+					"path" : "/opt/homebrew/include/SDL2"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/Users/emilgormnielsen/CodingProjects/Beerventures/src/Game"
+					"path" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/src/Core"
 				}
 			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2,
-				3
+				1
 			]
 		}
 	],
-	"id" : "Game::@a929eadd5dd9e671eb94",
-	"name" : "Game",
-	"nameOnDisk" : "libGame.a",
+	"id" : "Core::@2b0c95fd366a9f5c3552",
+	"name" : "Core",
+	"nameOnDisk" : "libCore.a",
 	"paths" : 
 	{
-		"build" : "src/Game",
-		"source" : "src/Game"
+		"build" : "src/Core",
+		"source" : "src/Core"
 	},
 	"sourceGroups" : 
 	[
@@ -100,19 +98,16 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2,
-				3
+				1
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				4,
-				5,
-				6,
-				7
+				2,
+				3,
+				4
 			]
 		}
 	],
@@ -121,45 +116,28 @@
 		{
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
-			"path" : "src/Game/BGame.cxx",
+			"path" : "src/Core/BInventory.cxx",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
-			"path" : "src/Game/BGameObject.cxx",
+			"path" : "src/Core/BUnit.cxx",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
-			"compileGroupIndex" : 0,
-			"path" : "src/Game/BTextureManager.cxx",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 5,
-			"compileGroupIndex" : 0,
-			"path" : "src/Game/BMap.cxx",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 5,
-			"path" : "src/Game/BGame.h",
+			"path" : "src/Core/BInventory.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 5,
-			"path" : "src/Game/BGameObject.h",
+			"path" : "src/Core/BUnit.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 5,
-			"path" : "src/Game/BTextureManager.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 5,
-			"path" : "src/Game/BMap.h",
+			"path" : "src/Core/BObject.h",
 			"sourceGroupIndex" : 1
 		}
 	],

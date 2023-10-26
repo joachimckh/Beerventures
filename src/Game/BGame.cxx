@@ -1,21 +1,24 @@
 #include "BGame.h"
 #include "BTextureManager.h"
-#include "BGameObject.h"
 #include "BMap.h"
+#include "BComponents.h"
+#include "BVector2D.h"
 
-BGameObject *player;
-BGameObject *enemy;
 BMap *map;
 
 SDL_Renderer* BGame::Renderer = nullptr;
+const int BGame::gResolution{32};
+SDL_Event BGame::event;
 
-BGame::BGame() :
-cnt(0)
+BManager manager;
+auto& player{manager.AddEntity()};
+
+BGame::BGame()
 {}
 BGame::~BGame()
 {}
 void BGame::Init(const char* title, int xPos, int yPos, int width, int height, bool fullScreen){
-  int flags(0);
+  int flags{0};
   if (fullScreen){ flags = SDL_WINDOW_FULLSCREEN; }
 
   if (SDL_Init(SDL_INIT_EVERYTHING) == 0){
@@ -38,15 +41,16 @@ void BGame::Init(const char* title, int xPos, int yPos, int width, int height, b
     isRunning = false;
   }
 
-  player = new BGameObject("../Assets/rogue_32.png",0,0);
-  enemy = new BGameObject("../Assets/rogue_32.png",50,50);
   map = new BMap();
 
+  player.AddComponents<BTransformComponent>(0,0);
+  player.AddComponents<BSpriteComponent>("assets/rogue_32.png");
+  player.AddComponents<BKeyBoardController>();
   
-
+  
 }
 void BGame::HandleEvents(){
-  SDL_Event event;
+
   SDL_PollEvent(&event);
   switch(event.type){
     case SDL_QUIT:
@@ -57,20 +61,25 @@ void BGame::HandleEvents(){
   }
 }
 void BGame::Update(){
-  cnt++;
 
-  player->Update();
-  enemy->Update();
+  manager.Refresh();
+  manager.Update();
+
+  // if (player.GetComponent<BTransformComponent>().position.x>400){
+  //   player.GetComponent<BSpriteComponent>().SetTex("assets/undead_32.png");
+  // }
+
 
 }
 void BGame::Render(){
   SDL_RenderClear(Renderer);
   // add stuff to render here
   map->DrawMap();
-  player->Render();
-  enemy->Render();
-  SDL_RenderPresent(Renderer);
+  manager.Draw();
 
+
+
+  SDL_RenderPresent(Renderer);
 }
 void BGame::Clean(){
   SDL_DestroyWindow(Window);
