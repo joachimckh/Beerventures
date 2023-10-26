@@ -209,6 +209,7 @@ src/CMakeFiles/Beerventures.dir/main.cxx.o
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__ranges/access.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__split_buffer
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__string
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__threading_support
@@ -284,6 +285,7 @@ src/CMakeFiles/Beerventures.dir/main.cxx.o
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/typeinfo
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/utility
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/variant
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/vector
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/version
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/wchar.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/wctype.h
@@ -507,6 +509,12 @@ src/CMakeFiles/Beerventures.dir/main.cxx.o
  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/xsavesintrin.h
  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/xtestintrin.h
  /Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/BGame.h
+ /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BColor.h
+ /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BInventory.h
+ /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BObject.h
+ /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BPlayer.h
+ /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BUnit.h
+ /Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/BGame.h
  /usr/local/include/SDL2/SDL.h
  /usr/local/include/SDL2/SDL_assert.h
  /usr/local/include/SDL2/SDL_atomic.h
@@ -554,6 +562,7 @@ src/CMakeFiles/Beerventures.dir/main.cxx.o
  /usr/local/include/SDL2/SDL_thread.h
  /usr/local/include/SDL2/SDL_timer.h
  /usr/local/include/SDL2/SDL_touch.h
+ /usr/local/include/SDL2/SDL_ttf.h
  /usr/local/include/SDL2/SDL_version.h
  /usr/local/include/SDL2/SDL_video.h
  /usr/local/include/SDL2/begin_code.h

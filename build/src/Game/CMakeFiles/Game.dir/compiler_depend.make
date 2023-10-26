@@ -208,6 +208,7 @@ src/Game/CMakeFiles/Game.dir/BGame.cxx.o: /Users/emilgormnielsen/CodingProjects/
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__ranges/access.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__ranges/enable_view.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__split_buffer \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__threading_support \
@@ -283,6 +284,7 @@ src/Game/CMakeFiles/Game.dir/BGame.cxx.o: /Users/emilgormnielsen/CodingProjects/
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/typeinfo \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/utility \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/variant \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/version \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/wchar.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/wctype.h \
@@ -506,7 +508,13 @@ src/Game/CMakeFiles/Game.dir/BGame.cxx.o: /Users/emilgormnielsen/CodingProjects/
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/xsavesintrin.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/xtestintrin.h \
   /Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/BGame.h \
-  /Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/BGameObject.h \
+  /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BColor.h \
+  /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BHUD.h \
+  /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BInventory.h \
+  /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BObject.h \
+  /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BPlayer.h \
+  /Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BUnit.h \
+  /Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/BGame.h \
   /Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/BMap.h \
   /Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/BTextureManager.h \
   /usr/local/include/SDL2/SDL.h \
@@ -556,6 +564,7 @@ src/Game/CMakeFiles/Game.dir/BGame.cxx.o: /Users/emilgormnielsen/CodingProjects/
   /usr/local/include/SDL2/SDL_thread.h \
   /usr/local/include/SDL2/SDL_timer.h \
   /usr/local/include/SDL2/SDL_touch.h \
+  /usr/local/include/SDL2/SDL_ttf.h \
   /usr/local/include/SDL2/SDL_version.h \
   /usr/local/include/SDL2/SDL_video.h \
   /usr/local/include/SDL2/begin_code.h \
@@ -1115,6 +1124,7 @@ src/Game/CMakeFiles/Game.dir/BGameObject.cxx.o: /Users/emilgormnielsen/CodingPro
   /usr/local/include/SDL2/SDL_thread.h \
   /usr/local/include/SDL2/SDL_timer.h \
   /usr/local/include/SDL2/SDL_touch.h \
+  /usr/local/include/SDL2/SDL_ttf.h \
   /usr/local/include/SDL2/SDL_version.h \
   /usr/local/include/SDL2/SDL_video.h \
   /usr/local/include/SDL2/begin_code.h \
@@ -1674,6 +1684,7 @@ src/Game/CMakeFiles/Game.dir/BMap.cxx.o: /Users/emilgormnielsen/CodingProjects/B
   /usr/local/include/SDL2/SDL_thread.h \
   /usr/local/include/SDL2/SDL_timer.h \
   /usr/local/include/SDL2/SDL_touch.h \
+  /usr/local/include/SDL2/SDL_ttf.h \
   /usr/local/include/SDL2/SDL_version.h \
   /usr/local/include/SDL2/SDL_video.h \
   /usr/local/include/SDL2/begin_code.h \
@@ -2232,6 +2243,7 @@ src/Game/CMakeFiles/Game.dir/BTextureManager.cxx.o: /Users/emilgormnielsen/Codin
   /usr/local/include/SDL2/SDL_thread.h \
   /usr/local/include/SDL2/SDL_timer.h \
   /usr/local/include/SDL2/SDL_touch.h \
+  /usr/local/include/SDL2/SDL_ttf.h \
   /usr/local/include/SDL2/SDL_version.h \
   /usr/local/include/SDL2/SDL_video.h \
   /usr/local/include/SDL2/begin_code.h \
@@ -2239,6 +2251,8 @@ src/Game/CMakeFiles/Game.dir/BTextureManager.cxx.o: /Users/emilgormnielsen/Codin
 
 
 /Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/BTextureManager.cxx:
+
+/Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/BGameObject.h:
 
 /usr/local/include/SDL2/close_code.h:
 
@@ -2298,7 +2312,13 @@ src/Game/CMakeFiles/Game.dir/BTextureManager.cxx.o: /Users/emilgormnielsen/Codin
 
 /Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/BTextureManager.h:
 
-/Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/BGameObject.h:
+/Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BPlayer.h:
+
+/Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BInventory.h:
+
+/Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BHUD.h:
+
+/Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BColor.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/xsavesintrin.h:
 
@@ -2448,10 +2468,6 @@ src/Game/CMakeFiles/Game.dir/BTextureManager.cxx.o: /Users/emilgormnielsen/Codin
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__iterator/common_iterator.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/appleapiopts.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_wint_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int8_t.h:
@@ -2564,8 +2580,6 @@ src/Game/CMakeFiles/Game.dir/BTextureManager.cxx.o: /Users/emilgormnielsen/Codin
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/runetype.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/nl_types.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/machine/_types.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/mach/machine/_structs.h:
@@ -2595,6 +2609,12 @@ src/Game/CMakeFiles/Game.dir/BTextureManager.cxx.o: /Users/emilgormnielsen/Codin
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/wchar.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/partial_sort_copy.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/vector:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/variant:
 
@@ -2651,6 +2671,8 @@ src/Game/CMakeFiles/Game.dir/BTextureManager.cxx.o: /Users/emilgormnielsen/Codin
 /usr/local/include/SDL2/SDL_audio.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/limits:
+
+/Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BObject.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_in_addr_t.h:
 
@@ -2752,6 +2774,8 @@ src/Game/CMakeFiles/Game.dir/BTextureManager.cxx.o: /Users/emilgormnielsen/Codin
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/swap.h:
 
+/Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/BUnit.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/pop_heap.h:
@@ -2801,6 +2825,10 @@ src/Game/CMakeFiles/Game.dir/BTextureManager.cxx.o: /Users/emilgormnielsen/Codin
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__threading_support:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/nl_types.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__split_buffer:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/declval.h:
 
@@ -2890,15 +2918,15 @@ src/Game/CMakeFiles/Game.dir/BTextureManager.cxx.o: /Users/emilgormnielsen/Codin
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/pthread.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/appleapiopts.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__iterator/common_iterator.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__iterator/access.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/xtestintrin.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_key_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/partial_sort_copy.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_va_list.h:
 
@@ -2963,6 +2991,8 @@ src/Game/CMakeFiles/Game.dir/BTextureManager.cxx.o: /Users/emilgormnielsen/Codin
 /usr/local/include/SDL2/SDL_main.h:
 
 /Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/BGame.cxx:
+
+/usr/local/include/SDL2/SDL_ttf.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_wctype_t.h:
 

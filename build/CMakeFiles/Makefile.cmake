@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.27.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.3/CMakeSystem.cmake"
   "/Users/emilgormnielsen/CodingProjects/Beerventures/cmake/FindSDL2.cmake"
+  "/Users/emilgormnielsen/CodingProjects/Beerventures/cmake/FindSDL2TTF.cmake"
   "/Users/emilgormnielsen/CodingProjects/Beerventures/cmake/FindSDL2_image.cmake"
   "/Users/emilgormnielsen/CodingProjects/Beerventures/src/CMakeLists.txt"
   "/Users/emilgormnielsen/CodingProjects/Beerventures/src/Core/CMakeLists.txt"

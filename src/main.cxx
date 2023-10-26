@@ -1,4 +1,8 @@
 #include "BGame.h"
+#include "BPlayer.h"
+
+static const int WINDOW_WIDTH = 800;
+static const int WINDOW_HEIGHT = 640;
 
 int main(){
 
@@ -12,7 +16,7 @@ int main(){
 
   game = new BGame();
 
-  game->Init("JinxEngine",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED, 800, 640, false);
+  game->Init("JinxEngine",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED, WINDOW_WIDTH, WINDOW_HEIGHT, false);
 
   while (game->Running()){
 

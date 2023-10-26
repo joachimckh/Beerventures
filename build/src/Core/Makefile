@@ -130,6 +130,54 @@ Core/fast:
 	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/build
 .PHONY : Core/fast
 
+BColor.o: BColor.cxx.o
+.PHONY : BColor.o
+
+# target to build an object file
+BColor.cxx.o:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BColor.cxx.o
+.PHONY : BColor.cxx.o
+
+BColor.i: BColor.cxx.i
+.PHONY : BColor.i
+
+# target to preprocess a source file
+BColor.cxx.i:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BColor.cxx.i
+.PHONY : BColor.cxx.i
+
+BColor.s: BColor.cxx.s
+.PHONY : BColor.s
+
+# target to generate assembly for a file
+BColor.cxx.s:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BColor.cxx.s
+.PHONY : BColor.cxx.s
+
+BHUD.o: BHUD.cxx.o
+.PHONY : BHUD.o
+
+# target to build an object file
+BHUD.cxx.o:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BHUD.cxx.o
+.PHONY : BHUD.cxx.o
+
+BHUD.i: BHUD.cxx.i
+.PHONY : BHUD.i
+
+# target to preprocess a source file
+BHUD.cxx.i:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BHUD.cxx.i
+.PHONY : BHUD.cxx.i
+
+BHUD.s: BHUD.cxx.s
+.PHONY : BHUD.s
+
+# target to generate assembly for a file
+BHUD.cxx.s:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BHUD.cxx.s
+.PHONY : BHUD.cxx.s
+
 BInventory.o: BInventory.cxx.o
 .PHONY : BInventory.o
 
@@ -153,6 +201,54 @@ BInventory.s: BInventory.cxx.s
 BInventory.cxx.s:
 	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BInventory.cxx.s
 .PHONY : BInventory.cxx.s
+
+BObject.o: BObject.cxx.o
+.PHONY : BObject.o
+
+# target to build an object file
+BObject.cxx.o:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BObject.cxx.o
+.PHONY : BObject.cxx.o
+
+BObject.i: BObject.cxx.i
+.PHONY : BObject.i
+
+# target to preprocess a source file
+BObject.cxx.i:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BObject.cxx.i
+.PHONY : BObject.cxx.i
+
+BObject.s: BObject.cxx.s
+.PHONY : BObject.s
+
+# target to generate assembly for a file
+BObject.cxx.s:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BObject.cxx.s
+.PHONY : BObject.cxx.s
+
+BPlayer.o: BPlayer.cxx.o
+.PHONY : BPlayer.o
+
+# target to build an object file
+BPlayer.cxx.o:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BPlayer.cxx.o
+.PHONY : BPlayer.cxx.o
+
+BPlayer.i: BPlayer.cxx.i
+.PHONY : BPlayer.i
+
+# target to preprocess a source file
+BPlayer.cxx.i:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BPlayer.cxx.i
+.PHONY : BPlayer.cxx.i
+
+BPlayer.s: BPlayer.cxx.s
+.PHONY : BPlayer.s
+
+# target to generate assembly for a file
+BPlayer.cxx.s:
+	cd /Users/emilgormnielsen/CodingProjects/Beerventures/build && $(MAKE) $(MAKESILENT) -f src/Core/CMakeFiles/Core.dir/build.make src/Core/CMakeFiles/Core.dir/BPlayer.cxx.s
+.PHONY : BPlayer.cxx.s
 
 BUnit.o: BUnit.cxx.o
 .PHONY : BUnit.o
@@ -187,9 +283,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Core"
+	@echo "... BColor.o"
+	@echo "... BColor.i"
+	@echo "... BColor.s"
+	@echo "... BHUD.o"
+	@echo "... BHUD.i"
+	@echo "... BHUD.s"
 	@echo "... BInventory.o"
 	@echo "... BInventory.i"
 	@echo "... BInventory.s"
+	@echo "... BObject.o"
+	@echo "... BObject.i"
+	@echo "... BObject.s"
+	@echo "... BPlayer.o"
+	@echo "... BPlayer.i"
+	@echo "... BPlayer.s"
 	@echo "... BUnit.o"
 	@echo "... BUnit.i"
 	@echo "... BUnit.s"

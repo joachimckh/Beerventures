@@ -1,18 +1,18 @@
 #ifndef BARMOUR__H
 #define BARMOUR__H
 
-class BArmour : Object {
+class BArmour : BObject {
     public:
         BArmour();
         ~BArmour();
         
-        void SetHead(Object obj) { head = obj; }
-        void SetShoulder(Object obj) { shoulder = obj; }
-        void SetTorso(Object obj) { torso = obj; }
-        void SetLegs(Object obj) { legs = obj; }
-        void SetArms(Object obj) { arms = obj; }
-        void SetHands(Object obj) { hands = obj; }
-        void SetFeet(Object obj) { feet = obj; }
+        void SetHead(BObject obj) { head = obj; }
+        void SetShoulder(BObject obj) { shoulder = obj; }
+        void SetTorso(BObject obj) { torso = obj; }
+        void SetLegs(BObject obj) { legs = obj; }
+        void SetArms(BObject obj) { arms = obj; }
+        void SetHands(BObject obj) { hands = obj; }
+        void SetFeet(BObject obj) { feet = obj; }
         
     private:
         BObject head;

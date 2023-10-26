@@ -1,11 +1,14 @@
 #include "BGame.h"
 #include "BTextureManager.h"
-#include "BGameObject.h"
+//#include "../Core/BUnit.h"
+#include "../Core/BPlayer.h"
+#include "../Core/BHUD.h"
 #include "BMap.h"
 
-BGameObject *player;
-BGameObject *enemy;
+BPlayer *player;
+BUnit *enemy;
 BMap *map;
+BHUD *hud;
 
 SDL_Renderer* BGame::Renderer = nullptr;
 
@@ -31,15 +34,16 @@ void BGame::Init(const char* title, int xPos, int yPos, int width, int height, b
       SDL_SetRenderDrawColor(Renderer, 0, 0, 0, 0);
       std::cout << "Renderer created" << std::endl; 
     }
-
+    TTF_Init();
     isRunning = true;
   }
   else{
     isRunning = false;
   }
 
-  player = new BGameObject("../Assets/rogue_32.png",0,0);
-  enemy = new BGameObject("../Assets/rogue_32.png",50,50);
+  player = new BPlayer("src/Assets/rogue_32.png",0,0);
+  enemy = new BUnit("src/Assets/rogue_32.png",50,50);
+  hud = new BHUD(width, height, *player);
   map = new BMap();
 
   
@@ -69,15 +73,19 @@ void BGame::Render(){
   map->DrawMap();
   player->Render();
   enemy->Render();
+  hud->Render();
   SDL_RenderPresent(Renderer);
 
 }
 void BGame::Clean(){
   SDL_DestroyWindow(Window);
   SDL_DestroyRenderer(Renderer);
+  TTF_Quit();
   SDL_Quit();
   std::cout << "Game cleaned!..." << std::endl;
 }
 bool BGame::Running(){
   return isRunning;
 }
+
+

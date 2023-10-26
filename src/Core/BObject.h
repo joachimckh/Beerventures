@@ -1,14 +1,24 @@
-#ifndef BOBJECT__H
-#define BOBJECT__H
+#ifndef __BOBJECT_H__
+#define __BOBJECT_H__
+
+#include "../Game/BGame.h"
+#include "BColor.h"
 
 class BObject {
     public:
-        BObject();
+        BObject(const char* textureSheet, int x, int y);
+        BObject(BObject &other);
         ~BObject();
-        int GetID() { return id; }
 
-    private:
-        int id;        
+        virtual void Update();
+        virtual void Render();
+
+    protected:
+        SDL_Texture*  objTexture;
+        SDL_Rect      srcRect, destRect;
+
+        int xPos;
+        int yPos;  
 
 };
 

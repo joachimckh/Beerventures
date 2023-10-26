@@ -1,7 +1,7 @@
 #ifndef BWEAPON__H
 #define BWEAPON__H
 
-class BWeapon : Object {
+class BWeapon : BObject {
     public:
         
     private:

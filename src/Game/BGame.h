@@ -3,6 +3,7 @@
 
 #include <SDL.h>
 #include <SDL_image.h>
+#include <SDL_ttf.h>
 #include <stdio.h>
 #include <iostream>
 
@@ -20,6 +21,8 @@ class BGame{
     void Clean();
 
     bool Running();
+
+    SDL_Window *GetWindow() { return Window; } //returns SDL window
 
 
     static SDL_Renderer *Renderer;

@@ -1,7 +1,21 @@
 #include "BPlayer.h"
 
-BPlayer::BPlayer() : Unit(){}
+BPlayer::BPlayer(const char* textureSheet, int x, int y) : BUnit(textureSheet,x,y){
+    max_stamina = CalculateMaxStamina();
+    max_power = CalculateMaxPower();
+    current_stamina = max_stamina;
+    current_power = max_power;
+}
 BPlayer::~BPlayer(){}
+BPlayer::BPlayer(BPlayer &other) : BUnit(other){
+    max_stamina = other.max_stamina;
+    current_stamina = other.current_stamina;
+    max_power = other.max_power;
+    current_power = other.current_power;
+}
+void BPlayer::Render(){
+  SDL_RenderCopy(BGame::Renderer,objTexture, &srcRect, &destRect);
+}
 
 void BPlayer::SetStamina(int staminaval){
     if(staminaval <= 0) current_stamina = 0;
@@ -18,7 +32,7 @@ int BPlayer::CalculateMaxStamina(){
 }
 int BPlayer::CalculateMaxPower(){
     int x;
-    switch(powertype){
+    switch(powerType){
         case PowerType::Rage:
             x = stats.Brawn;
             break;

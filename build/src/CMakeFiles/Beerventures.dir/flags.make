@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include/SDL2 -I/Users/emilgormnielsen/CodingProjects/Beerventures/src/Game -I/Users/emilgormnielsen/CodingProjects/Beerventures/src/Core
+CXX_INCLUDES = -I/usr/local/include/SDL2 -I/Users/emilgormnielsen/CodingProjects/Beerventures/src/Core -I/Users/emilgormnielsen/CodingProjects/Beerventures/src/Game
 
 CXX_FLAGS =  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
 
