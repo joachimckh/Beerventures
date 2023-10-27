@@ -8,14 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/src/main.cxx" "src/CMakeFiles/Beerventures.dir/main.cxx.o" "gcc" "src/CMakeFiles/Beerventures.dir/main.cxx.o.d"
+  "/Users/emilgormnielsen/CodingProjects/Beerventures/src/main.cxx" "src/CMakeFiles/Beerventures.dir/main.cxx.o" "gcc" "src/CMakeFiles/Beerventures.dir/main.cxx.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/build/src/Game/CMakeFiles/Game.dir/DependInfo.cmake"
-  "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/build/src/Core/CMakeFiles/Core.dir/DependInfo.cmake"
-  "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/build/src/Game/BECS/CMakeFiles/BECS.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

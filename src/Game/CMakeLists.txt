@@ -1,3 +1,4 @@
+add_subdirectory(BECS)
 add_library(Game "")
 
 target_sources(Game
@@ -14,6 +15,7 @@ target_sources(Game
     ${CMAKE_CURRENT_LIST_DIR}/BMap.h
     ${CMAKE_CURRENT_LIST_DIR}/BVector2D.h
   )
+target_link_libraries(Game PUBLIC BECS)
 target_include_directories(Game
   PUBLIC
     ${CMAKE_CURRENT_LIST_DIR}

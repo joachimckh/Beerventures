@@ -44,7 +44,7 @@ void BGame::Init(const char* title, int xPos, int yPos, int width, int height, b
   map = new BMap();
 
   player.AddComponents<BTransformComponent>(0,0);
-  player.AddComponents<BSpriteComponent>("assets/rogue_32.png");
+  player.AddComponents<BSpriteComponent>("src/Assets/rogue_32.png");
   player.AddComponents<BKeyBoardController>();
   
   

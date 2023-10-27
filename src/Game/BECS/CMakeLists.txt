@@ -14,6 +14,8 @@ target_sources(BECS
     ${CMAKE_CURRENT_LIST_DIR}/BSpriteComponent.h
     ${CMAKE_CURRENT_LIST_DIR}/BKeyBoardController.h
   )
+
+target_link_libraries(BECS PUBLIC Game)
 target_include_directories(BECS
   PUBLIC
     ${CMAKE_CURRENT_LIST_DIR}

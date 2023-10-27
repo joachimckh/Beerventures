@@ -1,4 +1,4 @@
-# Install script for directory: /Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/src/Game
+# Install script for directory: /Users/emilgormnielsen/CodingProjects/Beerventures/src/Game
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,12 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/Users/emilgormnielsen/CodingProjects/Beerventures/build/src/Game/BECS/cmake_install.cmake")
+
 endif()
 

@@ -12,7 +12,8 @@
 		[
 			"add_executable",
 			"target_link_libraries",
-			"include_directories"
+			"include_directories",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -27,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 6,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 8,
+				"line" : 7,
 				"parent" : 0
 			},
 			{
@@ -42,8 +43,14 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 9,
+				"line" : 12,
 				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
 			}
 		]
 	},
@@ -53,29 +60,41 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk"
+					"fragment" : "-std=gnu++2b -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 4,
-					"path" : "/opt/homebrew/include/SDL2"
+					"path" : "/usr/local/include/SDL2"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/emilgormnielsen/CodingProjects/Beerventures/build"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/src/Game"
+					"path" : "/Users/emilgormnielsen/CodingProjects/Beerventures/src/Game"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/src/Core"
+					"path" : "/Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/BECS"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/src/Game/BECS"
+					"path" : "/Users/emilgormnielsen/CodingProjects/Beerventures/src/Core"
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "23"
+			},
 			"sourceIndexes" : 
 			[
 				0
@@ -87,10 +106,6 @@
 		{
 			"backtrace" : 2,
 			"id" : "Game::@a929eadd5dd9e671eb94"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "BECS::@a2936abe97553a59d357"
 		},
 		{
 			"backtrace" : 2,
@@ -108,7 +123,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/opt/homebrew/lib/libSDL2.dylib",
+				"fragment" : "/usr/local/lib/libSDL2.dylib",
 				"role" : "libraries"
 			},
 			{
@@ -118,12 +133,12 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/opt/homebrew/lib/libSDL2main.a",
+				"fragment" : "/usr/local/lib/libSDL2main.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/opt/homebrew/lib/libSDL2_image.dylib",
+				"fragment" : "/usr/local/lib/libSDL2_image.dylib",
 				"role" : "libraries"
 			},
 			{
@@ -134,6 +149,16 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "Core/libCore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "Game/BECS/libBECS.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "Game/libGame.a",
 				"role" : "libraries"
 			},
 			{
@@ -215,21 +240,6 @@
 		},
 		{
 			"backtrace" : 2,
-			"path" : "src/Core/BInventory.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 2,
-			"path" : "src/Core/BUnit.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 2,
-			"path" : "src/Core/BObject.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 2,
 			"path" : "src/Game/BECS/BComponents.h",
 			"sourceGroupIndex" : 1
 		},
@@ -251,6 +261,21 @@
 		{
 			"backtrace" : 2,
 			"path" : "src/Game/BECS/BKeyBoardController.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Core/BInventory.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Core/BUnit.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Core/BObject.h",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -23,7 +23,6 @@
 					"childIndexes" : 
 					[
 						2,
-						3,
 						4
 					],
 					"jsonFile" : "directory-src-b6cf2213fc5053b67c22.json",
@@ -41,6 +40,10 @@
 				},
 				{
 					"build" : "src/Game",
+					"childIndexes" : 
+					[
+						3
+					],
 					"jsonFile" : "directory-src.Game-1e991eca42be2d4a1ec3.json",
 					"minimumCMakeVersion" : 
 					{
@@ -61,7 +64,7 @@
 					{
 						"string" : "3.10"
 					},
-					"parentIndex" : 1,
+					"parentIndex" : 2,
 					"projectIndex" : 0,
 					"source" : "src/Game/BECS",
 					"targetIndexes" : 
@@ -112,28 +115,28 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "BECS::@a2936abe97553a59d357",
-					"jsonFile" : "target-BECS-8e9d30bc1cc761a40f29.json",
+					"jsonFile" : "target-BECS-d4725b6a642779fd284e.json",
 					"name" : "BECS",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "Beerventures::@145eef247bfb46b6828c",
-					"jsonFile" : "target-Beerventures-576d9a203274e3fd2e35.json",
+					"jsonFile" : "target-Beerventures-49826c19fc4639485402.json",
 					"name" : "Beerventures",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "Core::@2b0c95fd366a9f5c3552",
-					"jsonFile" : "target-Core-f4a10a8746de0349baa7.json",
+					"jsonFile" : "target-Core-502a891d06a7d04f264f.json",
 					"name" : "Core",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "Game::@a929eadd5dd9e671eb94",
-					"jsonFile" : "target-Game-c3308e67777f510cdc1f.json",
+					"jsonFile" : "target-Game-e42d5b032ad2396b01ef.json",
 					"name" : "Game",
 					"projectIndex" : 0
 				}
@@ -143,12 +146,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/build",
-		"source" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures"
+		"build" : "/Users/emilgormnielsen/CodingProjects/Beerventures/build",
+		"source" : "/Users/emilgormnielsen/CodingProjects/Beerventures"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 6
 	}
 }

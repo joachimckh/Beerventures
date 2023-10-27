@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libCore.a CMakeFiles/Core.dir/BInventory.cxx.o CMakeFiles/Core.dir/BUnit.cxx.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libCore.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libCore.a CMakeFiles/Core.dir/BInventory.cxx.o CMakeFiles/Core.dir/BUnit.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libCore.a

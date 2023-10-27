@@ -1,6 +1,10 @@
 #include "BGame.h"
+#include "BeerventuresConfig.h"
 
-int main(){
+int main(int argc, char* argv[]){
+  // report version
+  std::cout << argv[0] << " Version " << Beerventures_VERSION_MAJOR << "."
+            << Beerventures_VERSION_MINOR << std::endl;
 
   const int FPS = 60;
   const int frameDelay = 1000 / FPS;
