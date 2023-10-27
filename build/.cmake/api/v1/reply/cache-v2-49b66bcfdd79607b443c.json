@@ -23,7 +23,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/emilgormnielsen/CodingProjects/Beerventures/build"
+			"value" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/build"
 		},
 		{
 			"name" : "Beerventures_IS_TOP_LEVEL",
@@ -47,7 +47,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/emilgormnielsen/CodingProjects/Beerventures"
+			"value" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/ar"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -103,7 +103,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/emilgormnielsen/CodingProjects/Beerventures/build"
+			"value" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "27"
+			"value" : "25"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "3"
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -167,7 +167,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local/Cellar/cmake/3.27.3/bin/cmake"
+			"value" : "/opt/homebrew/Cellar/cmake/3.25.1/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -179,7 +179,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local/Cellar/cmake/3.27.3/bin/cpack"
+			"value" : "/opt/homebrew/Cellar/cmake/3.25.1/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -191,7 +191,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local/Cellar/cmake/3.27.3/bin/ctest"
+			"value" : "/opt/homebrew/Cellar/cmake/3.25.1/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -207,7 +207,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/c++"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -303,7 +303,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/cc"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -411,7 +411,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local/Cellar/cmake/3.27.3/bin/ccmake"
+			"value" : "/opt/homebrew/Cellar/cmake/3.25.1/bin/ccmake"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/emilgormnielsen/CodingProjects/Beerventures/build/CMakeFiles/pkgRedirects"
+			"value" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/emilgormnielsen/CodingProjects/Beerventures"
+			"value" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -647,7 +647,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/ld"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -663,7 +663,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/gmake"
+			"value" : "/opt/homebrew/bin/gmake"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -759,7 +759,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/nm"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/nm"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -803,7 +803,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/objdump"
 		},
 		{
 			"name" : "CMAKE_OSX_ARCHITECTURES",
@@ -839,7 +839,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -963,7 +963,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/ranlib"
 		},
 		{
 			"name" : "CMAKE_READELF",
@@ -991,7 +991,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local/Cellar/cmake/3.27.3/share/cmake"
+			"value" : "/opt/homebrew/Cellar/cmake/3.25.1/share/cmake"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1199,23 +1199,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip"
-		},
-		{
-			"name" : "CMAKE_TAPI",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/tapi"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/strip"
 		},
 		{
 			"name" : "CMAKE_UNAME",
@@ -1255,7 +1239,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/local/lib/libSDL2.dylib;-framework Cocoa][/usr/local/include/SDL2][v()]"
+			"value" : "[/opt/homebrew/lib/libSDL2.dylib;-framework Cocoa][/opt/homebrew/include/SDL2][v()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_SDL2_image",
@@ -1267,7 +1251,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/local/lib/libSDL2_image.dylib][/usr/local/include/SDL2][v()]"
+			"value" : "[/opt/homebrew/lib/libSDL2_image.dylib][/opt/homebrew/include/SDL2][v()]"
 		},
 		{
 			"name" : "Game_LIB_DEPENDS",
@@ -1291,7 +1275,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/lib/libSDL2main.a"
+			"value" : "/opt/homebrew/lib/libSDL2main.a"
 		},
 		{
 			"name" : "SDL2_DIR",
@@ -1319,7 +1303,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/local/include/SDL2"
+			"value" : "/opt/homebrew/include/SDL2"
 		},
 		{
 			"name" : "SDL2_IMAGE_LIBRARY",
@@ -1335,7 +1319,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/lib/libSDL2_image.dylib"
+			"value" : "/opt/homebrew/lib/libSDL2_image.dylib"
 		},
 		{
 			"name" : "SDL2_INCLUDE_DIR",
@@ -1347,7 +1331,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/local/include/SDL2"
+			"value" : "/opt/homebrew/include/SDL2"
 		},
 		{
 			"name" : "SDL2_LIBRARY",
@@ -1359,7 +1343,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/usr/local/lib/libSDL2.dylib;-framework Cocoa"
+			"value" : "/opt/homebrew/lib/libSDL2.dylib;-framework Cocoa"
 		},
 		{
 			"name" : "SDL2_LIBRARY_TEMP",
@@ -1371,7 +1355,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local/lib/libSDL2.dylib"
+			"value" : "/opt/homebrew/lib/libSDL2.dylib"
 		}
 	],
 	"kind" : "cache",

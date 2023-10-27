@@ -2,17 +2,26 @@
 
 BTransformComponent::BTransformComponent()
 {
-  position.x = 0.0f;
-  position.y = 0.0f;
+  position.Zero();
 }
-BTransformComponent::BTransformComponent(int x, int y)
+BTransformComponent::BTransformComponent(int sc){
+  position.Zero();
+  iScale = sc;
+}
+BTransformComponent::BTransformComponent(float x, float y)
 {
   position.x = x;
   position.y = y;
 }
+BTransformComponent::BTransformComponent(float x, float y, int h, int w, int sc){
+  position.x = x;
+  position.y = y;
+  iHeight = h;
+  iWidth = w;
+  iScale = sc;
+}
 void BTransformComponent::Init(){
-  velocity.x = 0;
-  velocity.y = 0;
+  velocity.Zero();
   
 }
 void BTransformComponent::Update(){

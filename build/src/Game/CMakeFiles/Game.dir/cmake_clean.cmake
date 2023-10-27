@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Game.dir/BCollision.cxx.o"
+  "CMakeFiles/Game.dir/BCollision.cxx.o.d"
   "CMakeFiles/Game.dir/BGame.cxx.o"
   "CMakeFiles/Game.dir/BGame.cxx.o.d"
   "CMakeFiles/Game.dir/BGameObject.cxx.o"

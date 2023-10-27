@@ -5,6 +5,9 @@
 #include <SDL_image.h>
 #include <stdio.h>
 #include <iostream>
+#include <vector>
+
+class BColliderComponent;
 
 class BGame{
   
@@ -21,11 +24,11 @@ class BGame{
 
     bool Running();
 
-
+    static void AddTile(int id, int x, int y);
     static SDL_Renderer *Renderer;
-
     static const int gResolution;
     static SDL_Event event;
+    static std::vector<BColliderComponent*> colliders;
     
 
   private:

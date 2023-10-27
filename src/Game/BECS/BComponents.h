@@ -5,7 +5,8 @@
 #include "BTransformComponent.h"
 #include "BSpriteComponent.h"
 #include "BKeyBoardController.h"
-
+#include "BColliderComponent.h"
+#include "BTileComponent.h"
 
 
 

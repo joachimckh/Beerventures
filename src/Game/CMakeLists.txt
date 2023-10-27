@@ -8,12 +8,14 @@ target_sources(Game
     ${CMAKE_CURRENT_LIST_DIR}/BTextureManager.cxx
     ${CMAKE_CURRENT_LIST_DIR}/BMap.cxx
     ${CMAKE_CURRENT_LIST_DIR}/BVector2D.cxx
+    ${CMAKE_CURRENT_LIST_DIR}/BCollision.cxx
   PUBLIC
     ${CMAKE_CURRENT_LIST_DIR}/BGame.h
     ${CMAKE_CURRENT_LIST_DIR}/BGameObject.h
     ${CMAKE_CURRENT_LIST_DIR}/BTextureManager.h
     ${CMAKE_CURRENT_LIST_DIR}/BMap.h
     ${CMAKE_CURRENT_LIST_DIR}/BVector2D.h
+    ${CMAKE_CURRENT_LIST_DIR}/BCollision.h
   )
 target_link_libraries(Game PUBLIC BECS)
 target_include_directories(Game

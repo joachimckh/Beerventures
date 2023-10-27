@@ -1,8 +1,7 @@
 #ifndef __BMAP_H__
 #define __BMAP_H__
 
-#include "BGame.h"
-
+#include <string>
 
 class BMap{
 
@@ -11,17 +10,9 @@ class BMap{
     ~BMap();
 
 
-    void LoadMap(int arr[20][25]);
-    void DrawMap();
+    static void LoadMap(std::string path, int sizeX, int sizeY);
+    
 
-  private:
-
-    SDL_Rect          src, dst;
-    SDL_Texture*      sDirt;
-    SDL_Texture*      sGrass;
-    SDL_Texture*      sWater;
-
-    int map[20][25];
 
 };
 #endif /* BMAP */

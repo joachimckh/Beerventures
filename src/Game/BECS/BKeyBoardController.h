@@ -9,6 +9,7 @@
 class BKeyBoardController : public BComponent{
   public:
     BTransformComponent *transform;
+    BSpriteComponent *sprite;
 
     void Init() override;
     void Update() override;

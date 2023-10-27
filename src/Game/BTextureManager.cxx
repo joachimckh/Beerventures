@@ -12,3 +12,6 @@ SDL_Texture* BTextureManager::LoadTexture(const char* texture){
 void BTextureManager::Draw(SDL_Texture *tex, SDL_Rect src, SDL_Rect dst){
   SDL_RenderCopy(BGame::Renderer, tex, &src, &dst);
 }
+void BTextureManager::Draw(SDL_Texture *tex, SDL_Rect src, SDL_Rect dst, SDL_RendererFlip flip){
+  SDL_RenderCopyEx(BGame::Renderer, tex, &src, &dst, NULL, NULL, flip);
+}

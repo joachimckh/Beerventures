@@ -60,30 +60,33 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=gnu++2b -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk"
+					"fragment" : " -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk"
+				},
+				{
+					"fragment" : "-std=gnu++2b"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 4,
-					"path" : "/usr/local/include/SDL2"
+					"path" : "/opt/homebrew/include/SDL2"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/Users/emilgormnielsen/CodingProjects/Beerventures/build"
+					"path" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/build"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/emilgormnielsen/CodingProjects/Beerventures/src/Game"
+					"path" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/src/Game"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/emilgormnielsen/CodingProjects/Beerventures/src/Game/BECS"
+					"path" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/src/Game/BECS"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/emilgormnielsen/CodingProjects/Beerventures/src/Core"
+					"path" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/src/Core"
 				}
 			],
 			"language" : "CXX",
@@ -123,7 +126,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libSDL2.dylib",
+				"fragment" : "/opt/homebrew/lib/libSDL2.dylib",
 				"role" : "libraries"
 			},
 			{
@@ -133,12 +136,12 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libSDL2main.a",
+				"fragment" : "/opt/homebrew/lib/libSDL2main.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libSDL2_image.dylib",
+				"fragment" : "/opt/homebrew/lib/libSDL2_image.dylib",
 				"role" : "libraries"
 			},
 			{
@@ -201,7 +204,11 @@
 				10,
 				11,
 				12,
-				13
+				13,
+				14,
+				15,
+				16,
+				17
 			]
 		}
 	],
@@ -240,6 +247,11 @@
 		},
 		{
 			"backtrace" : 2,
+			"path" : "src/Game/BCollision.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
 			"path" : "src/Game/BECS/BComponents.h",
 			"sourceGroupIndex" : 1
 		},
@@ -261,6 +273,21 @@
 		{
 			"backtrace" : 2,
 			"path" : "src/Game/BECS/BKeyBoardController.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Game/BECS/BColliderComponent.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Game/BECS/BTileComponent.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Game/BECS/BAnimation.h",
 			"sourceGroupIndex" : 1
 		},
 		{

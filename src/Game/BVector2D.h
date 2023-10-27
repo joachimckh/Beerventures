@@ -25,6 +25,9 @@ struct BVector2D{
     BVector2D& operator*=(const BVector2D& vec);
     BVector2D& operator/=(const BVector2D& vec);
 
+    BVector2D& operator*(const int& i);
+    BVector2D& Zero();
+
     friend std::ostream& operator<<(std::ostream& stream, const BVector2D& vec);
 };
 

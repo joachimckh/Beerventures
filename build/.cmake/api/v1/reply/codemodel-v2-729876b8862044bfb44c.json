@@ -115,28 +115,28 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "BECS::@a2936abe97553a59d357",
-					"jsonFile" : "target-BECS-d4725b6a642779fd284e.json",
+					"jsonFile" : "target-BECS-447772d991976a9710a7.json",
 					"name" : "BECS",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "Beerventures::@145eef247bfb46b6828c",
-					"jsonFile" : "target-Beerventures-49826c19fc4639485402.json",
+					"jsonFile" : "target-Beerventures-6f50196c188f4624f37c.json",
 					"name" : "Beerventures",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "Core::@2b0c95fd366a9f5c3552",
-					"jsonFile" : "target-Core-502a891d06a7d04f264f.json",
+					"jsonFile" : "target-Core-4d91be46764bd9250a0a.json",
 					"name" : "Core",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "Game::@a929eadd5dd9e671eb94",
-					"jsonFile" : "target-Game-e42d5b032ad2396b01ef.json",
+					"jsonFile" : "target-Game-c1649a204c651e2cef63.json",
 					"name" : "Game",
 					"projectIndex" : 0
 				}
@@ -146,12 +146,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/emilgormnielsen/CodingProjects/Beerventures/build",
-		"source" : "/Users/emilgormnielsen/CodingProjects/Beerventures"
+		"build" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures/build",
+		"source" : "/Users/joachimcarlokristianhansen/JinxPebblesBeerVentures/Beerventures"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 4
 	}
 }
