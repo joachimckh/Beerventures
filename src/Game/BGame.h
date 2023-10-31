@@ -24,15 +24,25 @@ class BGame{
 
     bool Running();
 
-    static void AddTile(int id, int x, int y);
+
     static SDL_Renderer *Renderer;
     static const int gResolution;
     static SDL_Event event;
-    static std::vector<BColliderComponent*> colliders;
     
+    
+    static bool isRunning;
+
+    static SDL_Rect camera;
+
+
+    enum groupLabels : std::size_t{
+      groupMap,
+      groupPlayers,
+      groupColliders
+};
 
   private:
-    bool          isRunning;
+    
     SDL_Window    *Window;
     
 

@@ -15,7 +15,7 @@ void BKeyBoardController::Update(){
         break;
       case SDLK_a:
         transform->velocity.x = -1;
-        sprite->Play("Walk_right");
+        sprite->Play("Walk_left");
         // sprite->spriteFlip = SDL_FLIP_HORIZONTAL;
         break;
       case SDLK_d:
@@ -48,6 +48,9 @@ void BKeyBoardController::Update(){
       case SDLK_s:
         transform->velocity.y = 0;
         sprite->Play("Idle_down");
+        break;
+      case SDLK_ESCAPE:
+        BGame::isRunning = false;
         break;
       default:
         break;

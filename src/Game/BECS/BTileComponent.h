@@ -2,27 +2,23 @@
 #define __BTILE_COMPONENT_H__
 
 #include "BECS.h"
-#include "BTransformComponent.h"
-#include "BSpriteComponent.h"
 #include "SDL.h"
+#include "BTextureManager.h"
+#include "BVector2D.h"
 
 class BTileComponent : public BComponent{
   public:
-    BTransformComponent     *transform;
-    BSpriteComponent        *sprite;
+    SDL_Texture*    texture;
+    SDL_Rect        srcRect,dstRect;
+    BVector2D       position;
 
-    SDL_Rect                tileRect;
-    int                     tileID;
-    const char*                   path;
 
     BTileComponent() = default;
-    BTileComponent(int x, int y, int w, int h, int id);
+    BTileComponent(int srcX, int srcY, int yPos, int xPos, int tsize, int tscale, const char* path);
+    ~BTileComponent();
 
-
-    void Init() override;
-
-
-
+    void Draw() override;
+    void Update() override;
 
 };
 

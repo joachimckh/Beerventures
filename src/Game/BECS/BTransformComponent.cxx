@@ -5,7 +5,8 @@ BTransformComponent::BTransformComponent()
   position.Zero();
 }
 BTransformComponent::BTransformComponent(int sc){
-  position.Zero();
+  position.x = 400;
+  position.y = 320;
   iScale = sc;
 }
 BTransformComponent::BTransformComponent(float x, float y)

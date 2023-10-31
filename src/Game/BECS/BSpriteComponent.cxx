@@ -45,8 +45,8 @@ void BSpriteComponent::Update(){
 
   srcRect.y = animIndex * transform->iHeight;
 
-  dstRect.x = static_cast<int>(transform->position.x);
-  dstRect.y = static_cast<int>(transform->position.y);
+  dstRect.x = static_cast<int>(transform->position.x) - BGame::camera.x;
+  dstRect.y = static_cast<int>(transform->position.y) - BGame::camera.y;
 
   dstRect.w = transform->iWidth * transform->iScale;
   dstRect.h = transform->iHeight * transform->iScale;

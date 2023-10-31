@@ -10,18 +10,12 @@ BMap *map;
 SDL_Renderer* BGame::Renderer = nullptr;
 const int BGame::gResolution{32};
 SDL_Event BGame::event;
-std::vector<BColliderComponent*> BGame::colliders;
+
+bool BGame::isRunning = false;
+SDL_Rect BGame::camera = {0,0,800, 640};
 
 BManager manager;
 auto& player{manager.AddEntity()};
-auto& wall{manager.AddEntity()};
-
-enum groupLabels : std::size_t{
-  groupMap,
-  groupPlayers,
-  groupEnemies,
-  groupColliders
-};
 
 BGame::BGame()
 {}
@@ -41,7 +35,7 @@ void BGame::Init(const char* title, int xPos, int yPos, int width, int height, b
 
     Renderer = SDL_CreateRenderer(Window,-1,0);
     if (Renderer) { 
-      SDL_SetRenderDrawColor(Renderer, 0, 0, 0, 0);
+      SDL_SetRenderDrawColor(Renderer, 255, 255, 255, 255);
       std::cout << "Renderer created" << std::endl; 
     }
 
@@ -51,9 +45,9 @@ void BGame::Init(const char* title, int xPos, int yPos, int width, int height, b
     isRunning = false;
   }
 
-  map = new BMap();
+  map = new BMap("../src/Assets/terrain_ss.png", 3, 32);
 
-  BMap::LoadMap("../src/Assets/m16x16.map",16,16);
+  map->LoadMap("../src/Assets/m25x25.map",25,25);
 
 
   player.AddComponent<BTransformComponent>(1);
@@ -62,14 +56,11 @@ void BGame::Init(const char* title, int xPos, int yPos, int width, int height, b
   player.AddComponent<BColliderComponent>("player");
   player.AddGroup(groupPlayers);
 
-
-  wall.AddComponent<BTransformComponent>(300,300, 300, 20, 1);
-  wall.AddComponent<BSpriteComponent>("../src/Assets/dirt.png");
-  wall.AddComponent<BColliderComponent>("wall");
-  wall.AddGroup(groupMap);
-  
-  
 }
+auto& tiles(manager.GetGroup(BGame::groupMap));
+auto& players(manager.GetGroup(BGame::groupPlayers));
+auto& colliders(manager.GetGroup(BGame::groupColliders));
+
 void BGame::HandleEvents(){
 
   SDL_PollEvent(&event);
@@ -83,30 +74,42 @@ void BGame::HandleEvents(){
 }
 void BGame::Update(){
 
+  SDL_Rect playerCol = player.GetComponent<BColliderComponent>().collider;
+  BVector2D playerPos = player.GetComponent<BTransformComponent>().position;
+
   manager.Refresh();
   manager.Update();
 
-  for (auto cc : colliders){
-    BCollision::AABB(player.GetComponent<BColliderComponent>(), *cc);
+  for (auto& c : colliders){
+    SDL_Rect cCol = c->GetComponent<BColliderComponent>().collider;
+    if (BCollision::AABB(cCol, playerCol)){
+      player.GetComponent<BTransformComponent>().position = playerPos;
+    }
   }
 
+  camera.x = player.GetComponent<BTransformComponent>().position.x - 400;
+  camera.y = player.GetComponent<BTransformComponent>().position.y - 320;
+  if (camera.x < 0) camera.x = 0;
+  if (camera.y < 0) camera.y = 0;
+  if (camera.x > camera.w) camera.x = camera.w;
+  if (camera.y > camera.h) camera.y = camera.h;
+
+ 
 
 }
-auto& tiles(manager.GetGroup(groupMap));
-auto& players(manager.GetGroup(groupPlayers));
-auto& enemies(manager.GetGroup(groupEnemies));
 
 void BGame::Render(){
   SDL_RenderClear(Renderer);
   for (auto& t : tiles){
     t->Draw();
   }
+  // for (auto& c : colliders){
+  //   c->Draw();
+  // }
   for (auto& p : players){
     p->Draw();
   }
-  for (auto& e : enemies){
-    e->Draw();
-  }
+
   SDL_RenderPresent(Renderer);
 }
 void BGame::Clean(){
@@ -117,10 +120,4 @@ void BGame::Clean(){
 }
 bool BGame::Running(){
   return isRunning;
-}
-
-void BGame::AddTile(int id, int x, int y){
-  auto& tile{manager.AddEntity()};
-  tile.AddComponent<BTileComponent>(x, y, BGame::gResolution, BGame::gResolution, id);
-  tile.AddGroup(groupMap);
 }

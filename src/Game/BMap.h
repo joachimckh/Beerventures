@@ -6,13 +6,19 @@
 class BMap{
 
   public:
-    BMap();
+    BMap(const char* mfp, int ms, int ts);
     ~BMap();
 
 
-    static void LoadMap(std::string path, int sizeX, int sizeY);
-    
+    void LoadMap(std::string path, int sizeX, int sizeY);
+    void AddTile(int srcX, int srcY, int xPos, int yPos);
+  
+  private:
 
+    const char* mapFilePath;
+    int mapScale;
+    int tileSize;
+    int scaledSize;
 
 };
 #endif /* BMAP */
